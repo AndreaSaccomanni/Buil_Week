@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="./Assets/CSS/reset.css" />
     <link rel="stylesheet" href="./Assets/CSS/index.css" />
     <link rel="stylesheet" href="./Assets/CSS/results.css">
-    <link font />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>Results</title>
   </head>
   <body>
@@ -18,14 +23,24 @@
         <h1 class="title">Results</h1>
         <h3 class="subtitle">The summary of your answers:</h3>
         <div class="hero">
-          <p>Correct</p>
-          <p></p>
-          <p>Wrong</p>
+          <span>
+          <p class="correct">Correct</p>
+          <p>67%</p>
+          <p>5</p>
+          </span>
+          <span>
+          <p class="cerchio">Congratulations</p>
+          </span>
+          <span>
+          <p class="wrong">Wrong</p>
+          <p>67%</p>
+          <p>6/7</p>
+          </span>
         </div>
       </div>
     </main>
     <footer>
-      <button class="rateUs">RATE US</button>
+      <a href="./feedback.html"><button class="rateUs">RATE US</button></a>
     </footer>
     <scrip src="./Assets/JavaScript/script.js"></scrip>
   </body>
