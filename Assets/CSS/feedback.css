@@ -1,0 +1,8 @@
+body {
+  background-image: url(../images/bg.jpg);
+  text-align: center;
+  background-size: cover;
+}
+.results h1 {
+  font-family: "Outfit", sans-serif;
+}
