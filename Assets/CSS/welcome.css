@@ -1,0 +1,26 @@
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-image: url(../images/bg.jpg);
+
+  color: whitesmoke;
+}
+strong {
+  font-weight: bold;
+}
+main {
+  margin-left: 6rem;
+}
+main h1 {
+  font-size: xx-large;
+}
+footer {
+  margin-inline: 6rem;
+}
+h3 {
+  color: #d20094;
+  font-weight: bold;
+  font-family: "outfit";
+}
