@@ -23,7 +23,7 @@ for (let i = 1; i < arrayStar.length; i++) {
   };
   arrayStar[i].onclick = function () {
     for (let j = 0; j <= i; j++) {
-      const path = document.querySelectorAll(".stars");
+      const path = arrayStar[j].queryselector(".stars");
       path.removeAttribute("fill");
     }
   };
