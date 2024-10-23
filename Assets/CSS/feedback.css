@@ -30,8 +30,9 @@ footer {
 .star {
   margin-bottom: 50px;
 }
-.star img {
+.star .singleStar {
   margin: 5px;
+  fill: #0b103b;
 }
 button {
   margin-top: 70px;
