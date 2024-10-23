@@ -28,6 +28,7 @@ footer {
   text-align: center;
 }
 .star {
+  color: #0b103b;
   margin-bottom: 50px;
 }
 .star img {
@@ -46,16 +47,21 @@ button {
   height: 70px;
 }
 input {
-  height: 20px;
+  height: 30px;
   margin: auto;
   width: 41.5%;
   background: none;
   border: none;
   margin-bottom: 10px;
   color: whitesmoke;
+  font-size: 20px;
 }
 input::placeholder {
   font-size: 20px;
+}
+input:checked {
+  visibility: none;
+  background: none;
 }
 .breakLine {
   margin: auto;
@@ -63,4 +69,7 @@ input::placeholder {
   height: 2px;
 
   background-color: #900080;
+}
+.removeBorder {
+  border: none;
 }
