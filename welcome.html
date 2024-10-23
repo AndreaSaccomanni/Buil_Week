@@ -4,32 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Assets/CSS/reset.css" />
+
     <link rel="stylesheet" href="./Assets/CSS/index.css" />
-    <link font />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./Assets/CSS/welcome.css" />
     <title>Welcome Page</title>
   </head>
   <body>
     <header>
-      <img src="" />
+      <img class="logo" src="./Assets/images/epicode_logo.png" />
     </header>
 
     <main>
       <div id="welcome">
-        <h1>Welcome to <span> your exam</span></h1>
-        <h3>Instruction</h3>
-        <p>We don't expect most engineers to know the answer to all of these question, so don't worry if you're unsure of a few of them</p>
+        <h1>Welcome to <strong> your exam</strong></h1>
+        <h3>Instructions</h3>
+        <p>We don't expect most engineers to know the answer to all of these question, so don't worry if you're unsure of a few of them.</p>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>• Each question is <strong>timed</strong> and can only be <strong>answered once.</strong></li>
+          <li>• Changin browser tab or opening othrt windows will <strong>invalidate the question</strong>.</li>
+          <li>• This exam will take approx. <strong>0-5 minutes</strong>.</li>
         </ul>
       </div>
     </main>
 
     <footer>
-      <input type="checkbox" />
-      <button></button>
+      <input type="checkbox" id="checkbox" /><span><strong> I promise to answer myself without help from anyone</strong></span>
+
+      <button class="goOn">PROCEED</button>
     </footer>
-    <scrip src="./Assets/JavaScript/script.js"></scrip>
+    <script src="./Assets/JavaScript/welcome.js"></script>
   </body>
 </html>

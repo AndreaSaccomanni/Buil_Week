@@ -3,33 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./Assets/CSS/benchmark.css" />
     <link rel="stylesheet" href="./Assets/CSS/reset.css" />
     <link rel="stylesheet" href="./Assets/CSS/index.css" />
-    <link font />
-    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Benchmark</title>
   </head>
   <body>
     <header>
-      <img src="" />
+      <img class="logo" src="./Assets/images/epicode_logo.png" />
     </header>
     <main>
       <div id="question">
-        <p>testo domanda</p>
+        <p>What does CPU <strong>stand for?</strong></p>
       </div>
 
       <div id="answers">
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <div>
+          <button class="correct">Central Processing Unit</button>
+          <button class="incorrect">Computer Personal Unit</button>
+        </div>
+        <div>
+          <button class="incorrect">Central Processor Unit</button>
+          <button class="incorrect">Central Process Unit</button>
+        </div>
       </div>
     </main>
+    <br />
     <footer>
       <div>
-        <p>question 1/10</p>
-        <button class="goOn">prosegui</button>
+        <p>QUESTION 1 <span>/10</span></p>
+        <button id="goOn">PROCEED</button>
       </div>
     </footer>
-    <scrip src="./Assets/JavaScript/script.js"></scrip>
+    <script src="./Assets/JavaScript/benchmark.js"></script>
   </body>
 </html>
