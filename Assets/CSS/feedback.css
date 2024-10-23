@@ -73,3 +73,9 @@ input:checked {
 .removeBorder {
   border: none;
 }
+#star1 {
+  fill: #00ffff;
+}
+.stars {
+  fill: #00ffff;
+}
