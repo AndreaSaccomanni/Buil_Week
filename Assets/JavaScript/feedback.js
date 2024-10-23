@@ -1,8 +1,11 @@
-const arrayStar = document.querySelectorAll(".singleStar");
+window.onload = function () {
+  const path = document.getElementById("star1");
+  path.removeAttribute("fill");
+};
 
 const stars = document.querySelectroAll(".star");
-stars[0].addEventListener("mouseenter", function () {
-  stars[0].setAttribute("fill", "#00FFFF");
+stars.addEventListener("mouseenter", function () {
+  stars.setAttribute("fill", "#00FFFF");
 });
 
 const removeBorder = () => {
