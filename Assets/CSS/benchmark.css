@@ -16,6 +16,7 @@ strong {
 }
 
 #answers button {
+  cursor: pointer;
   font-family: "Inter", sans-serif;
   font-size: 19px;
   font-weight: 750;
@@ -31,7 +32,23 @@ strong {
   text-align: center;
   background-color: rgb(128, 128, 128, 0.1);
 }
+.selectedButton {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 19px;
+  font-weight: 750;
+  color: whitesmoke;
+  margin: 1%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 50px 50px;
 
+  width: 29rem;
+  height: 90px;
+
+  text-align: center;
+  background-color: #d20094;
+}
 #goOn {
   color: whitesmoke;
   padding-inline: 60px;
