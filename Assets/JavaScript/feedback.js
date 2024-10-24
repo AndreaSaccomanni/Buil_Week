@@ -36,12 +36,20 @@ const button = document.getElementById("btn");
 
 button.onclick = function () {
   const mainContent = document.getElementById("mainContent");
-  const feedback = document.getElementById("feedback");
+  const badFeedback = document.getElementById("badFeedback");
+  const midFeedback = document.getElementById("midFeedback");
+  const bestFeedback = document.getElementById("bestFeedback");
   const results = document.getElementsByClassName("results");
 
   const numberOfStar = countOfStars();
   if (numberOfStar <= 6) {
     results[0].classList.add("hiddenDiv");
-    feedback.classList.remove("hiddenDiv");
+    badFeedback.classList.remove("hiddenDiv");
+  } else if (numberOfStar === 7 || numberOfStar === 8) {
+    results[0].classList.add("hiddenDiv");
+    midFeedback.classList.remove("hiddenDiv");
+  } else if (numberOfStar === 9 || numberOfStar === 10) {
+    results[0].classList.add("hiddenDiv");
+    bestFeedback.classList.remove("hiddenDiv");
   }
 };

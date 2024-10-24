@@ -87,7 +87,7 @@ input:checked {
 .feedbackText {
   font-family: "Inter", sans-serif;
   font-size: 2rem;
-  font-weight: 250;
+  font-weight: bold;
   color: whitesmoke;
   height: 500px;
 }
@@ -100,4 +100,9 @@ input:checked {
 }
 .showDiv {
   display: block;
+}
+.home {
+  display: block;
+  margin-inline: 44.5%;
+  margin-top: 5%;
 }
