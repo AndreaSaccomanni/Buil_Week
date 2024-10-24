@@ -19,16 +19,19 @@ for (let i = 1; i < arrayStar.length; i++) {
       for (let j = 0; j <= i; j++) {
         arrayStar[j].style.fill = "#0B103B";
       }
-    };
+    }
   };
-  arrayStar[i].onclick = function () {
+};
+
+ arrayStar[i].onclick = function () {
     for (let j = 0; j <= i; j++) {
       const path = arrayStar[j].queryselector(".stars");
       path.removeAttribute("fill");
+      }
     }
-  };
-}
-
+     
+    
+    
 /*arrayStar[1].onmouseenter = function () {
   arrayStar[0].style.fill = "#00FFFF";
   arrayStar[1].style.fill = "#00FFFF";
