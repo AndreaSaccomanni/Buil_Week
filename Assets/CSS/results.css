@@ -39,19 +39,65 @@ main {
   font-weight: 300;
   font-family: "Outfit", sans-serif;
 }
+
+.percentualeCorrect {
+  font-family: "Outfit", sans-serif;
+  font-size: 3.7rem;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.okAnswers {
+  font-size: 22px;
+  font-family: "Outfit", sans-serif;
+  opacity: 0.7;
+  font-weight: 300;
+  text-align: left;
+}
+
+.opaco {
+  opacity: 0.7;
+}
 .wrong {
   margin-top: 3rem;
   font-size: 3.2rem;
   font-weight: 300;
   font-family: "Outfit", sans-serif;
+  opacity: 0.7;
+}
+
+.percentualeWrong {
+  font-family: "Outfit", sans-serif;
+  font-size: 3.7rem;
+  font-weight: 600;
+  text-align: right;
+  padding-bottom: 5px;
+  opacity: 0.7;
+}
+
+.noAnswers {
+  font-size: 22px;
+  font-family: "Outfit", sans-serif;
+  opacity: 0.7;
+  font-weight: 300;
+  text-align: right;
 }
 
 .cerchio {
   width: 200px;
   height: 200px;
-  background-color: #4caf50;
+  background-color: #00ffff;
   border-radius: 50%;
   margin-inline: 6.5rem;
+}
+
+.cerchio2 {
+  width: 400px;
+  height: 400px;
+  background-color: #f700ff;
+  border-radius: 50%;
+  margin-inline: 8rem;
 }
 
 footer {
@@ -61,11 +107,11 @@ footer {
 .rateUs {
   padding-inline: 60px;
   padding-block: 15px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 25px;
-  font-family: "outfit";
+  font-family: "Outfit", sans-serif;
   background-color: transparent;
-  box-shadow: 0px 0px 39px 3px #4f37d7;
+  box-shadow: 0px 0px 25px 3px #4f37d7;
   border: solid white;
-  margin-left: o;
+  margin-left: auto;
 }

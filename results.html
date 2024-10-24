@@ -6,31 +6,37 @@
     <link rel="stylesheet" href="./Assets/CSS/reset.css" />
     <link rel="stylesheet" href="./Assets/CSS/index.css" />
     <link rel="stylesheet" href="./Assets/CSS/results.css" />
-    <link font />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>Results</title>
   </head>
   <body>
     <header>
-      <img src="./Assets/images/epicode_logo.png" class="logo" />
+      <img src="./Assets/images/epicode_logo.png" alt="Epicode Logo" class="logo" />
     </header>
     <main>
       <div class="results">
         <h1 class="title">Results</h1>
         <h3 class="subtitle">The summary of your answers:</h3>
         <div class="hero">
-          <span>
-          <p class="correct">Correct</p>
-          <p>67%</p>
-          <p>5</p>
-          </span>
-          <span>
-          <p class="cerchio">Congratulations</p>
-          </span>
-          <span>
-          <p class="wrong">Wrong</p>
-          <p>67%</p>
-          <p>6/7</p>
-          </span>
+          <div>
+             <p class="correct">Correct</p>
+             <p class="percentualeCorrect"></p>
+             <p class="okAnswers"></p>
+          </div>
+          <div>
+            <p class="cerchio"></p> 
+            <p class="cerchio2"></p>
+          </div>
+          <div class="opaco">
+             <p class="wrong">Wrong</p>
+             <p class="percentualeWrong"></p>
+             <p class="noAnswers"></p>
+          </div>
         </div>
       </div>
     </main>
