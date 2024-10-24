@@ -27,3 +27,21 @@ for (let i = 0; i < arrayStar.length; i++) {
     }
   };
 }
+
+const countOfStars = function () {
+  return document.querySelectorAll(".singleStars.highlighted").length;
+};
+
+const button = document.getElementById("btn");
+
+button.onclick = function () {
+  const mainContent = document.getElementById("mainContent");
+  const feedback = document.getElementById("feedback");
+  const results = document.getElementsByClassName("results");
+
+  const numberOfStar = countOfStars();
+  if (numberOfStar <= 6) {
+    results[0].classList.add("hiddenDiv");
+    feedback.classList.remove("hiddenDiv");
+  }
+};

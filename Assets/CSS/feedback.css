@@ -24,9 +24,7 @@ main {
   text-align: center;
   margin-top: 4rem;
 }
-footer {
-  text-align: center;
-}
+
 .star {
   color: #0b103b;
   margin-bottom: 50px;
@@ -46,6 +44,7 @@ button {
   padding-block: 1rem;
   border: none;
   height: 70px;
+  cursor: pointer;
 }
 input {
   height: 30px;
@@ -84,4 +83,21 @@ input:checked {
 }
 .highlighted {
   fill: #00ffff;
+}
+.feedbackText {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 250;
+  color: whitesmoke;
+  height: 500px;
+}
+.mainContent {
+  display: none;
+}
+
+.hiddenDiv {
+  display: none;
+}
+.showDiv {
+  display: block;
 }
