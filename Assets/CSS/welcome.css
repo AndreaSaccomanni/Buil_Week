@@ -60,8 +60,16 @@ footer {
   background-color: #00ffff;
   box-shadow: 1px 0px 25px 3px #32c5c5;
   border: none;
+  cursor: pointer;
 }
 
 span {
   font-size: 1.2rem;
+}
+input[type="checkbox"] {
+  background-color: transparent;
+  border: solid;
+  margin-top: 2px;
+  cursor: pointer;
+  outline: 2px solid red;
 }

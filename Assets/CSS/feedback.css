@@ -73,7 +73,6 @@ input:checked {
 .singleStar {
   fill: #0b103b;
   cursor: pointer;
-  transition: fill 0.3s ease;
 }
 .select {
   fill: #00ffff;
