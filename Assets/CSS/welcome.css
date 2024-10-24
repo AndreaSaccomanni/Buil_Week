@@ -66,10 +66,41 @@ footer {
 span {
   font-size: 1.2rem;
 }
-input[type="checkbox"] {
-  background-color: transparent;
+/*input[type="checkbox"] {
+  appearance: none;
   border: solid;
   margin-top: 2px;
   cursor: pointer;
-  outline: 2px solid red;
+  outline: 2px solid whitesmoke;
+  height: 13px;
+  width: 13px;
+}
+input[type="checkbox"]:checked {
+  content-visibility: ;
+}*/
+
+input[type="checkbox"] {
+  appearance: none;
+  border: 2px solid #000;
+  margin-top: 2px;
+  cursor: pointer;
+  outline: 2px solid whitesmoke;
+  height: 13px;
+  width: 13px;
+
+  position: relative;
+}
+
+input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+
+  width: 9px;
+  height: 9px;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+input[type="checkbox"]:checked::after {
+  background-color: whitesmoke;
 }

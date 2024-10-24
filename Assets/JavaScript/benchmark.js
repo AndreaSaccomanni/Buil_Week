@@ -128,16 +128,48 @@ function loadQuestion() {
 
 loadQuestion();
 
-document.getElementById("goOn").addEventListener("click", () => {
+/*document.getElementById("goOn").addEventListener("click", () => {
   quizIndex++;
   buttons.forEach((button) => {
     buttons.forEach((btn) => (btn.style.backgroundColor = ""));
     button.style.backgroundColor = "rgb(128, 128, 128, 0.1)";
   });
 
-  if (quizIndex < quiz.results.length) {
-    loadQuestion();
+  buttons.forEach((button) => {
+    button.forEach((btn) => {
+      if (btn.style.backgroundColor !== "#D20094") {
+        return alert("Select an answer!");
+      } else {
+        if (quizIndex < quiz.results.length) {
+          loadQuestion();
+        } else {
+          window.location.href = "http://127.0.0.1:5501/results.html";
+        }
+      }
+    });
+  });
+});
+*/
+document.getElementById("goOn").addEventListener("click", () => {
+  let selectedButton = false;
+  buttons.forEach((button) => {
+    console.log(button.style.backgroundColor);
+    if (button.style.backgroundColor === "rgb(210, 0, 148)") {
+      selectedButton = true;
+    }
+  });
+  if (selectedButton) {
+    quizIndex++;
+    buttons.forEach((button) => {
+      button.style.backgroundColor = "rgb(128, 128, 128, 0.1)";
+    });
+
+    if (quizIndex < quiz.results.length) {
+      loadQuestion();
+    } else {
+      window.location.href = "http://127.0.0.1:5501/results.html";
+    }
   } else {
-    window.location.href = "http://127.0.0.1:5501/results.html";
+    alert("Select an answer!");
   }
 });
