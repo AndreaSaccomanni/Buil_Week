@@ -70,12 +70,17 @@ input:checked {
 
   background-color: #900080;
 }
-.removeBorder {
-  border: none;
+.singleStar {
+  fill: #0b103b;
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+.select {
+  fill: #00ffff;
 }
 #star1 {
   fill: #00ffff;
 }
-.stars {
+.highlighted {
   fill: #00ffff;
 }
