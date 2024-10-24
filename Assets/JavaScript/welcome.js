@@ -1,16 +1,11 @@
 window.onload = function () {
-  const checkbox = document.querySelector("#checkbox");
+  const btn = document.querySelector(".goOn");
 
-  checkbox.onclick = function () {
-    const btn = document.querySelector(".goOn");
+  btn.onclick = function () {
     if (checkbox.checked) {
-      btn.onclick = function () {
-        window.location.href = "http://127.0.0.1:5501/benchmark.html";
-      };
-    } else if (!checkbox.checked) {
-      btn.onclick = function () {
-        alert("You must select the checkbox!");
-      };
+      window.location.href = "http://127.0.0.1:5501/benchmark.html";
+    } else {
+      alert("You must select the checkbox!");
     }
   };
 };
