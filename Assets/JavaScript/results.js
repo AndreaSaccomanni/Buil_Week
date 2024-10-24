@@ -15,13 +15,33 @@ function results(correctAnswers) {
   wrongPerc.textContent = `${wrongPercentage.toFixed(0)}%`;
   wrongAnsw.textContent = `${wrongAnswers}/${totalQuestions} questions`;
 
-  if (correctPercentage >= 50) {
-    correctElement.classList.add("positive");
-    wrongElement.classList.remove("negative");
-  } else {
-    wrongElement.classList.add("negative");
-    correctElement.classList.remove("positive");
-  }
+    if (correctPercentage >= 50) {
+        correctElement.classList.add('positive');
+        wrongElement.classList.remove('negative');
+    } else {
+        wrongElement.classList.add('negative');
+        correctElement.classList.remove('positive');
+        
+        //cerchio dinamico
+        const risultatoCerchio = document.getElementById('risultatoCerchio');
+        const testiRisultato = document.getElementById('testiRisultato');
+        
+        testiRisultato.innerText = () =>{
+            if (correctPercentage >=60){
+                testiRisultato.add("Complimenti gay");
+            } else {
+                testiRisultato.add("TI SPOMPINEI");
+            }
+        }
+        
+        risultatoCerchio.classList.remove('.positive', '.negative');
+        if (correctPercentage >= 0) {
+            risultatoCerchio.classList.add('.positive');
+        } else {
+            risultatoCerchio.classList.add('.negative');
+        }
+        
+    }
 }
 
 results(7);

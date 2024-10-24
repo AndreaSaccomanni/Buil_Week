@@ -84,20 +84,30 @@ main {
   text-align: right;
 }
 
-.cerchio {
-  width: 200px;
-  height: 200px;
-  background-color: #00ffff;
-  border-radius: 50%;
-  margin-inline: 6.5rem;
+
+.cerchio{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 24px;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+ .testo{
+position: absolute;
+ }
+
+.positive{
+    border-color: #00FFFF;
 }
 
-.cerchio2 {
-  width: 400px;
-  height: 400px;
-  background-color: #f700ff;
-  border-radius: 50%;
-  margin-inline: 8rem;
+.negative{
+    border-color: #900080;
 }
 
 footer {
