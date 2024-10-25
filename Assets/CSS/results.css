@@ -119,12 +119,13 @@ main {
   transform: translateY(3px);
 }
 
-.positive{
-    border-color: #00FFFF;
+.positive {
+  border-color: #00ffff;
 }
 
 .negative{
     border-color: #900080;
+>>>>>>>>> Temporary merge branch 2
 }
 
 footer {
