@@ -28,9 +28,9 @@ function results(correctAnswers) {
 
     testiRisultato.innerText = () => {
       if (correctPercentage >= 60) {
-        testiRisultato.add("Complimenti gay");
+        testiRisultato.add("Congratulation");
       } else {
-        testiRisultato.add("TI SPOMPINEI");
+        testiRisultato.add("Hai fallito");
       }
     };
 
