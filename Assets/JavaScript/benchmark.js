@@ -15,7 +15,7 @@ const buttons = document.querySelectorAll(".singleAnswer");
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     buttons.forEach((btn) => (btn.style.backgroundColor = ""));
-    button.style.backgroundColor = "#D20094";
+    button.style.backgroundColor = "rgba(210, 0, 148, 1)";
   });
 });
 const quiz = {
@@ -106,6 +106,10 @@ const quiz = {
 let quizIndex = 0;
 
 function loadQuestion() {
+  buttons.forEach((button) => {
+    button.style.backgroundColor = "rgba(128, 128, 128, 0.1)";
+    button.id = "answer";
+  });
   const currentQuestion = quiz.results[quizIndex];
   const allAnswers = [currentQuestion.correct_answer, ...currentQuestion.incorrect_answers];
 
@@ -177,18 +181,13 @@ document.getElementById("goOn").addEventListener("click", () => {
   });
   if (selectedButton) {
     verifyAnswer();
-    setTimeout(() => {
-      quizIndex++;
-      buttons.forEach((button) => {
-        button.style.backgroundColor = "rgb(128, 128, 128, 0.1)";
-        button.id = "answer";
-      });
-      if (quizIndex < quiz.results.length) {
-        loadQuestion();
-      } else {
-        window.location.href = "http://127.0.0.1:5501/results.html";
-      }
-    }, 2000);
+    quizIndex++;
+
+    if (quizIndex < quiz.results.length) {
+      setTimeout(loadQuestion, 3000);
+    } else {
+      window.location.href = "http://127.0.0.1:5501/results.html";
+    }
   } else {
     alert("Select an answer!");
   }
