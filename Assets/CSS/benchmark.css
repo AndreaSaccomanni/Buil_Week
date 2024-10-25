@@ -30,7 +30,7 @@ strong {
   height: 90px;
 
   text-align: center;
-  background-color: rgb(128, 128, 128, 0.1);
+  background-color: rgba(128, 128, 128, 0.1);
   cursor: pointer;
 }
 .selectedButton {
@@ -48,7 +48,7 @@ strong {
   height: 90px;
 
   text-align: center;
-  background-color: #d20094;
+  background-color: rgba(210, 0, 148, 1);
 }
 #goOn {
   color: whitesmoke;
@@ -80,8 +80,10 @@ footer span {
   color: #900080;
 }
 #positive {
-  background-color: green;
+  background-color: green !important;
+  color: whitesmoke;
 }
 #negative {
-  background-color: red;
+  background-color: red !important;
+  color: whitesmoke;
 }
