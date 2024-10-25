@@ -85,3 +85,6 @@ footer span {
 #negative {
   background-color: red;
 }
+.singleAnswer {
+  vertical-align: top;
+}
