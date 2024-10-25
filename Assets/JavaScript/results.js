@@ -15,33 +15,18 @@ function results(correctAnswers) {
   wrongPerc.textContent = `${wrongPercentage.toFixed(0)}%`;
   wrongAnsw.textContent = `${wrongAnswers}/${totalQuestions} questions`;
 
-    if (correctPercentage >= 50) {
-        correctElement.classList.add('positive');
-        wrongElement.classList.remove('negative');
-    } else {
-        wrongElement.classList.add('negative');
-        correctElement.classList.remove('positive');
-        
-        //cerchio dinamico
-        const risultatoCerchio = document.getElementById('risultatoCerchio');
-        const testiRisultato = document.getElementById('testiRisultato');
-        
-        testiRisultato.innerText = () =>{
-            if (correctPercentage >=60){
-                testiRisultato.add("Complimenti gay");
-            } else {
-                testiRisultato.add("TI SPOMPINEI");
-            }
-        }
-        
-        risultatoCerchio.classList.remove('.positive', '.negative');
-        if (correctPercentage >= 0) {
-            risultatoCerchio.classList.add('.positive');
-        } else {
-            risultatoCerchio.classList.add('.negative');
-        }
-        
+}
+function donutNonFunzionante(correctAnswers, totalQuestions) {;
+    const donutRing = document.querySelector('.donut-ring');
+    if (correctAnswers > 0) {
+      const correctPercentage = (correctAnswers / totalQuestions) * 100;
+      const wrongPercentage = 100 - correctPercentage;
+      const strokeDasharray = `${correctPercentage} ${wrongPercentage}`;
+      const strokeDashoffset = totalQuestions - wrongPercentage + correctPercentage;
+      donutRing.setAttribute('stroke-dasharray', strokeDasharray);
+      donutRing.setAttribute('stroke-dashoffset', strokeDashoffset);
     }
 }
 
-results(7);
+
+results(2);
