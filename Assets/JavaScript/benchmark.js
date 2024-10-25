@@ -150,6 +150,23 @@ loadQuestion();
   });
 });
 */
+
+function verifyAnswer() {
+  const currentQuestion = quiz.results[quizIndex];
+  let greenAnswer = currentQuestion.correct_answer;
+  buttons.forEach((button) => {
+    if (button.style.backgroundColor === "rgb(210, 0, 148)") {
+      console.log(button.innerText);
+      if (button.innerText === greenAnswer) {
+        button.id = "positive";
+      } else {
+        button.id = "negative";
+      }
+    } else {
+      button.id = "answer";
+    }
+  });
+}
 document.getElementById("goOn").addEventListener("click", () => {
   let selectedButton = false;
   buttons.forEach((button) => {
@@ -159,16 +176,19 @@ document.getElementById("goOn").addEventListener("click", () => {
     }
   });
   if (selectedButton) {
-    quizIndex++;
-    buttons.forEach((button) => {
-      button.style.backgroundColor = "rgb(128, 128, 128, 0.1)";
-    });
-
-    if (quizIndex < quiz.results.length) {
-      loadQuestion();
-    } else {
-      window.location.href = "http://127.0.0.1:5501/results.html";
-    }
+    verifyAnswer();
+    setTimeout(() => {
+      quizIndex++;
+      buttons.forEach((button) => {
+        button.style.backgroundColor = "rgb(128, 128, 128, 0.1)";
+        button.id = "answer";
+      });
+      if (quizIndex < quiz.results.length) {
+        loadQuestion();
+      } else {
+        window.location.href = "http://127.0.0.1:5501/results.html";
+      }
+    }, 2000);
   } else {
     alert("Select an answer!");
   }

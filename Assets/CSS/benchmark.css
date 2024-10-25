@@ -79,3 +79,9 @@ footer p {
 footer span {
   color: #900080;
 }
+#positive {
+  background-color: green;
+}
+#negative {
+  background-color: red;
+}
