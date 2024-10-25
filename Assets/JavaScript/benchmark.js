@@ -184,7 +184,7 @@ document.getElementById("goOn").addEventListener("click", () => {
     quizIndex++;
 
     if (quizIndex < quiz.results.length) {
-      setTimeout(loadQuestion, 3000);
+      setTimeout(loadQuestion, 1000);
     } else {
       window.location.href = "http://127.0.0.1:5501/results.html";
     }
